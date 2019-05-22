@@ -3,7 +3,7 @@
 case "$1" in
   start)
     echo "enabled" >> /sys/bus/platform/devices/reg-userspace-consumer.0/state
-    /snap/bluez/167/usr/bin/hciattach /dev/ttymxc2 texas flow
+    hciattach /dev/ttymxc2 texas flow
     ;;
   stop)
     ;;
